@@ -33,3 +33,11 @@ invoke --list
 - `invoke lint` - Run linting checks
 - `invoke clean` - Clean build artifacts
 - `invoke install` - Install in development mode
+
+## Docker
+
+### Build and Run
+```bash
+docker build -t ram-ai-python .
+docker run ram-ai-python
+```
