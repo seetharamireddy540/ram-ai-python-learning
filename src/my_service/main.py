@@ -1,22 +1,16 @@
 """Main module for the package."""
+import uvicorn
+from fastapi import FastAPI
 
+app = FastAPI()
 
-def hello(name: str = "World") -> str:
-    """Return a greeting message.
-    
-    Args:
-        name: The name to greet. Defaults to "World".
-        
-    Returns:
-        A greeting message.
-    """
-    return f"Hello, {name}!"
-
+@app.get("/")
+def read_root():
+    return {"Hello": "World"}
 
 def main() -> None:
-    """Run the main function."""
-    print(hello())
-
+    """Run the FastAPI application."""
+    uvicorn.run(app, host="0.0.0.0", port=8000)
 
 if __name__ == "__main__":
     main()
