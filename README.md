@@ -39,5 +39,7 @@ invoke --list
 ### Build and Run
 ```bash
 docker build -t ram-ai-python .
-docker run ram-ai-python
+docker run -p 8080:8000 ram-ai-python
 ```
+
+Access the API at: http://localhost:8080
