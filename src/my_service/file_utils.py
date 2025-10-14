@@ -1,22 +1,21 @@
-from fileinput import filename
 import os
 import time
 
 
-filedir= os.path.dirname(__file__);
+filedir = os.path.dirname(__file__)
 print(f"filedir {filedir}")
-filename = os.path.join(os.path.dirname(__file__), 'graph.py')
+filepath = os.path.join(os.path.dirname(__file__), 'graph.py')
 print("...........")
-print(filename)
+print(filepath)
 print("...........")
-# with open(filename, 'r') as f:
+# with open(filepath, 'r') as f:
 #     print(f.read())
     
     
-if os.path.exists(filename):
+if os.path.exists(filepath):
     print("file exists")
-    size = os.path.getsize(filename)
+    size = os.path.getsize(filepath)
     print(f"file size {size} bytes")
-    mod_time = os.path.getmtime(filename)
+    mod_time = os.path.getmtime(filepath)
     print(f"file last modified {mod_time}")
     print(f"Last modified: {time.ctime(mod_time)}")
