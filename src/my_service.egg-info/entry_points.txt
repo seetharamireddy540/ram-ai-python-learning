@@ -1,0 +1,2 @@
+[console_scripts]
+my-command = my_service.main:main

@@ -1,0 +1,11 @@
+README.md
+pyproject.toml
+src/my_service/__init__.py
+src/my_service/main.py
+src/my_service.egg-info/PKG-INFO
+src/my_service.egg-info/SOURCES.txt
+src/my_service.egg-info/dependency_links.txt
+src/my_service.egg-info/entry_points.txt
+src/my_service.egg-info/requires.txt
+src/my_service.egg-info/top_level.txt
+tests/test_main.py
