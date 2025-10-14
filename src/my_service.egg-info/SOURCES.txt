@@ -1,6 +1,8 @@
 README.md
 pyproject.toml
 src/my_service/__init__.py
+src/my_service/file_utils.py
+src/my_service/graph.py
 src/my_service/main.py
 src/my_service.egg-info/PKG-INFO
 src/my_service.egg-info/SOURCES.txt
